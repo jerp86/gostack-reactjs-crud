@@ -5,7 +5,8 @@ export const Container = styled.div`
   padding: 30px 0;
 
   header {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 0 160px;
     display: flex;
@@ -38,6 +39,10 @@ export const Container = styled.div`
           }
         }
       }
+    }
+
+    @media (max-width: 510px) {
+      flex-direction: column;
     }
   }
 `;

@@ -44,6 +44,7 @@ export const Container = styled.div<IContainerProps>`
     background: transparent;
     border: 0;
     color: #b7b7cc;
+    width: 100%;
 
     &::placeholder {
       color: #b7b7cc;
@@ -52,5 +53,13 @@ export const Container = styled.div<IContainerProps>`
 
   svg {
     margin-right: 16px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px 16px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 2px 8px;
   }
 `;

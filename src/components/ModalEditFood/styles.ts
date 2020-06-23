@@ -5,6 +5,7 @@ export const Form = styled(Unform)`
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   h1 {
     font-weight: 600;
@@ -39,6 +40,26 @@ export const Form = styled(Unform)`
       background: #41c900;
       border-radius: 0 8px 8px 0;
       margin: 0 auto;
+    }
+  }
+
+  /* @media (max-width: 820px) {
+    width: 700px;
+  } */
+
+  @media (max-width: 600px) {
+    padding: 40px 32px;
+
+    .text {
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding: 32px 24px;
+
+    .text {
+      padding: 0 8px;
     }
   }
 `;

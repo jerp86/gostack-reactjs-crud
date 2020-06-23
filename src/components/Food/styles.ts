@@ -146,4 +146,28 @@ export const Container = styled.div<IFoodPlateProps>`
       }
     }
   }
+
+  @media (max-width: 725px) {
+    margin-bottom: 16px;
+
+    section.footer {
+      padding: 10px 20px;
+    }
+
+    @media (max-width: 360px) {
+      section.footer {
+        padding: 5px 10px;
+      }
+    }
+
+    @media (max-width: 340px) {
+      section.footer {
+        flex-direction: column;
+
+        div.icon-container {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
 `;

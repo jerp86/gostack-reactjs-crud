@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import ReactModal from 'react-modal';
+// import ReactModal from 'react-modal';
+import { Container } from './styles';
 
 interface IFoodPlate {
   id: number;
@@ -25,7 +26,7 @@ const Modal: React.FC<IModalProps> = ({ children, isOpen, setIsOpen }) => {
   }, [isOpen]);
 
   return (
-    <ReactModal
+    <Container
       shouldCloseOnOverlayClick={!false}
       onRequestClose={setIsOpen}
       isOpen={modalStatus}
@@ -41,7 +42,7 @@ const Modal: React.FC<IModalProps> = ({ children, isOpen, setIsOpen }) => {
           background: '#F0F0F5',
           color: '#000000',
           borderRadius: '8px',
-          width: '736px',
+          maxWidth: '850px',
           border: 'none',
         },
         overlay: {
@@ -50,7 +51,7 @@ const Modal: React.FC<IModalProps> = ({ children, isOpen, setIsOpen }) => {
       }}
     >
       {children}
-    </ReactModal>
+    </Container>
   );
 };
 
